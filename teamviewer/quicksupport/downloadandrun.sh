@@ -3,11 +3,12 @@
 
 # Download
 echo "Descargando paquete de TeamViewer"
-wget https://github.com/iesextremadura/commonsolutions/blob/master/teamviewer/quicksupport/teamviewer_15.4.4445_amd64.tar.xz
+wget -s https://download.teamviewer.com/download/linux/teamviewer_amd64.tar.xz
 
-# Uncompress & Run
+# Uncompress 
 echo "Descomprimiendo el paquete descargado"
 tar -xvf teamviewer_15.4.4445_amd64.tar.xz
 
-echo "Ejecutando"
-
+# Run
+echo "Ejecutando teamviewer"
+bash ./teamviewer/teamviewer
